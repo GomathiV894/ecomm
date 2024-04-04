@@ -1,0 +1,23 @@
+<html>
+  <h1>
+    homepage
+  </h1>
+  <a href="/productlisiting">add product</a>
+  <% for (var i=0;i<data.length;i++){%>
+    <li><%=data[i].cat_id %></li>
+    <%}%>
+    <h3>Product </h3>   
+    <ul>
+				<%data.forEach((d)=>{%>
+        <li><%= d.id%></li>
+        <li><%= d.cat_name%></li>
+        <li><%= d.cat_type%></li>
+        <li><%= d.is_deleted%></li>
+        
+        <li><%= d.price%></li>
+
+      <%})%>		
+    </ul>
+  
+  
+</html>

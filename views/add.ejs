@@ -1,0 +1,16 @@
+<html>
+	<a href="/productlisiting">add product</a>
+   <h3>Product</h3>
+           <%data.forEach((d)=>{%>
+						<li><%=d.product_name%></li>
+						<li><%=d.product_type%></li>
+						<li><%=d.product_brand%></li>
+						<li><%=d.cat_id%></li>
+						<li><%=d.cat_name%></li>
+						<li><%=d.cat_type%></li>
+						<li><%=d.price%></li>
+            <%});%>
+         
+
+   <footer><%- include('../common/footer')%><footer>
+  </html>
